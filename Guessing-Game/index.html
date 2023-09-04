@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Guessing Game</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="./style.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="card">
+        <div class="card-title">
+          <h1>Guessing Game</h1>
+        </div>
+        <div class="card-body">
+          <form>
+            <div class="form-field">
+              <label for="guessingNumber">Guess a number between 1-5: </label>
+              <input
+                type="number"
+                id="guessingNumber"
+                min="1"
+                max="5"
+                required
+              />
+            </div>
+
+            <div class="buttons">
+              <button id="check" type="submit" class="btn">Check result</button>
+            </div>
+          </form>
+          <p class="resultText"></p>
+          <p class="remainingAttempts"></p>
+        </div>
+      </div>
+    </div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
